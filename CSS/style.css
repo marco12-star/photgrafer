@@ -27,7 +27,7 @@ a{
 /* HEADER START */
 
 .header{
-	background: url(../IMG/back.png) 0 100%/cover fixed;
+	background: url(../IMG/header.png) 0 100%/cover fixed;
 	padding: 6em 0 2em 0;
 }
 
@@ -51,22 +51,26 @@ a{
 }
 
 .menu__nav a:hover{
-	color: #442d3a;
+	color: #e74a43;
+}
+
+.mobile__header{
+	display: none;
 }
 
 .logo__look{
 	padding: .2em .4em;
 	text-transform: uppercase;
 	font-size: 40px;
-	color: #262353;
-	border: 3px solid #262353;
+	color: #fff;
+	border: 3px solid #fff;
 	border-radius: 50%;
 	transition: .7s;
 }
 
 .logo__look:hover{
-	color: #B48F8E;
-	border: 3px solid #B48F8E;
+	color: #e74a43;
+	border: 3px solid #e74a43;
 }
 
 /* MENU */
@@ -76,6 +80,7 @@ a{
 .header__info{
 	text-align: center;
 	padding-top: 5em;
+	padding-left: 3em;
 	text-transform: uppercase;
 }
 
@@ -100,7 +105,7 @@ a{
 }
 
 .button:hover{
-	background: #442d3a;
+	background: #e74a43;
 }
 
 .header__contact{
@@ -110,7 +115,7 @@ a{
 }
 
 .header__contact a:hover{
-	color: #442d3a;
+	color: #e74a43;
 }
 
 /* HERO SECTION END */
@@ -120,7 +125,7 @@ a{
 /* ABOUT START */
 
 .about{
-	background: #f5f6f7;
+	background: #e06a2a;
 	padding: 5em 0;
 }
 
@@ -132,14 +137,12 @@ a{
 .about__quote{
 	padding-top: 2em;
 	font-size: 25px;
-	color: #d37650;
 	line-height: 2;
 	text-transform: uppercase;
 }
 
 .about__quote q{
 	padding: .2em;
-	background: #442d3a;
 }
 
 .btn{
@@ -174,8 +177,8 @@ a{
 	cursor: pointer;
 }
 .works__item:hover .works__img{
-    opacity: 1;
-	background: rgba(153, 230, 255, .8);
+	opacity: 1;
+	background: rgba(231, 74, 67, .8);
 }
 /* ABOUT END */
 
@@ -184,10 +187,14 @@ a{
 
 .works{
 	padding: 3em 0;
-	background: #ffa299;
+	background: #19322c;
 }
 
-.works__1row{
+.mobile__works{
+	display: none;
+}
+
+.works__row{
 	justify-content: space-between;
 	align-items: center;
 }
@@ -208,11 +215,10 @@ a{
 .services{
 	padding: 4em 0;
 	color: #fff;
-	background-image: linear-gradient(to right bottom, #009fcb, #00b4db, #00c9e9, #00dff5, #00f4ff);
+	background: #e74a43;
 }
 
 .services__content{
-	padding-top: 3em;
 	justify-content: space-around;
 }
 
@@ -226,8 +232,10 @@ a{
 }
 
 .services__title{
+	padding-bottom: 2em;
 	text-transform: uppercase;
 	text-align: center;
+	font-size: 30px;
 }
 
 .item__title{
@@ -246,7 +254,7 @@ a{
 
 .plans{
 	padding: 3em 0;
-	background-image: radial-gradient(circle, #80b9d9, #99bbe3, #b4bce8, #cebde8, #e5bfe3);
+	background: #19322c;
 }
 
 .plans__content{
@@ -255,6 +263,7 @@ a{
 
 .plans__item{
 	padding: 1em;
+	margin-top: 1em;
 	background: #fff;
 	color: #515f67;
 	text-align: center;
@@ -280,19 +289,28 @@ a{
 	background: #515f67;
 }
 
+.mobile__plans{
+	display: none;
+}
+
 /* PLANS END */
 
 /* WHO AM I START */
 
 .owner{
 	padding: 3em 0;
-	background: url(../IMG/form.png) 0 5%/cover fixed;
+	background: #e74a43;
 }
 
 .owner__title{
+	padding-left: 1em;
 	text-transform: uppercase;
 	font-family: Tahoma, Serif;
 	font-weight: 300;
+}
+
+.owner__text{
+	font-size: 18px;
 }
 
 .owner__title span{
@@ -300,7 +318,7 @@ a{
 }
 
 .owner__info{
-	padding: 3em 1em;
+	padding: 3em 2em;
 	justify-content: space-between;
 }
 
@@ -323,7 +341,7 @@ a{
 
 .contact{
 	padding: 10em 0;
-	background: #ffa64d;
+	background: #19322c;
 	text-align: center;
 }
 
@@ -345,7 +363,7 @@ a{
 
 input{
 	padding: 1em;
-	border: 2px solid #4e333f;
+	border: 2px solid #e74a43;
 	border-radius: 1em;
 }
 
@@ -376,16 +394,17 @@ input[placeholder]{
 address{
 	text-align: left;
 	font-family: Tahoma, Sans-serif;
-	font-size: 16px;
 	line-height: 2;
 }
+
 
 /* GET IN TOUCH END */
 
 /* FOOTER START */
 
-footer{
-	background: #797979;
+.footer{
+	padding: 1em 0;
+	background: #ccc;
 }
 
 .footer__content{
@@ -396,25 +415,29 @@ footer{
 .footer__menu > li + li{
 	padding-left: .6em;
 	margin-left: .6em;
-	border-left: 2px solid #e9e9e9;
+	border-left: 2px solid #000;
 }
 
 .footer__menu a{
 	font-size: 10px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #e9e9e9;
+	font-family: Tahoma, Serif;
+	color: #000;
 }
 
 .footer__menu a:hover{
-	color: #33dff7;
+	color: #e74a43;
 }
 
 .footer__title{
-	padding: 2em;
 	font-size: 13px;
 	font-family: Tahoma, Serif;
 	font-weight: 300;
+	color: #000;
+	text-transform: uppercase;
 }
 
 /* FOOTER END */
+
+}
