@@ -7,6 +7,7 @@
 }
 .header{
 	padding: 2em 0 2em 0;
+	background: url(../IMG/header.png) 0/cover;
 }
 	.header__menu{
 		display: none;
@@ -64,7 +65,7 @@
 	display: none;
 }
 .header__info_mobile{
-	margin: 0 1em 0 2em;
+	margin: 0 auto;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -247,6 +248,9 @@ address{
 }
 
 @media all and (max-width: 865px) {
+	.header{
+	background: url(../IMG/header.png) 50% 100%/cover;
+}
 
 	.contact__info {
 		flex-direction: column;
