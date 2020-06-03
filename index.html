@@ -2,10 +2,15 @@
 <html lang="tr">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	<title>PHOTOGRAFER</title>
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="CSS/reset.css">
 	<link rel="stylesheet" href="CSS/fonts.css">
+	<link rel="stylesheet" href="CSS/media.css">
 </head>
 <body>
 	<!-- HEADER START -->
@@ -15,7 +20,7 @@
 			<div class="header__menu flex">
 				<div class="menu">
 					<ul class="menu__nav flex">
-						<li><a href="#y2">çalışmalarım</a></li>
+						<li><a href="#y2">çalışmalar</a></li>
 						<li><a href="#y3">hizmetler</a></li>
 					</ul>
 				</div>
@@ -27,15 +32,40 @@
 					</ul>
 				</div>
 			</div>
+			<div class="mobile__header flex">
+				<div class="header__info_mobile">
+					<!-- MOBILE MENU START -->
+					<div class="topnav">
+						<div id="myLinks">
+							<nav>
+								<ul>
+									<li><a href="#y2">çalışmalar</a></li>
+									<li><a href="#y3">hizmetler</a></li>
+									<li><a href="#y4">hakkımda</a></li>
+									<li><a href="#y5">iletişim</a></li>
+								</ul>
+							</nav>
+						</div>
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+							</a>
+					</div>
+
+				<!-- MOBILE MENU END -->
+					<h1 class="header__title">münevver musa</h1>
+					<p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="#y1"><button class="button">daha fazla bilgi</button></a>
+				</div>
+			</div>
 			<div class="header__info">
-				<h1 class="header__title">meryem özkaya</h1>
+				<h1 class="header__title">münevver musa</h1>
 				<p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				<a href="#y1"><button class="button">daha fazla bilgi</button></a>
-			</div>
-			<div class="header__contact">
-				<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-				<a target="_blank" href="https://www.instagram.com/?hl=sr"><i class="fab fa-instagram"></i></a>
-				<a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+				<div class="header__contact">
+					<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+					<a target="_blank" href="https://www.instagram.com/?hl=sr"><i class="fab fa-instagram"></i></a>
+					<a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -62,8 +92,25 @@
 
 	<section id="y2" class="works">
 		<div class="container">
-			<div class="works__content">
-					<div class="works__1row flex">
+
+
+				<!-- MOBILE WORKS START -->
+
+					<div class="mobile__works">
+						<h2 class="works__title">Çalışmalarım</h2>
+						<div data-allowfullscreen="true" data-loop="true" data-autoplay="true" class="fotorama flex slider">
+							<img src="IMG/1.png">
+							<img src="IMG/2.png">
+							<img src="IMG/3.png">
+							<img src="IMG/4.png">
+							<img src="IMG/5.png">
+							<img src="IMG/6.png">
+						</div>
+					</div>
+
+				<!-- MOBILE WORKS END -->
+				<div class="works__content">
+					<div class="works__row flex">
 						<h2 class="works__title">Çalışmalarım</h2>
 						<div class="works__btn">
 							<button class="button">hepsi</button>
@@ -136,26 +183,26 @@
 		<div class="container">
 			<h2 class="services__title">hizmetler</h2>
 			<div class="services__content flex">
-					<div class="services__item">
-						<i class="far fa-heart services__icon"></i>
-						<h2 class="item__title">düğün</h2>
-						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
-					</div>
-					<div class="services__item">
-						<i class="far fa-grin-tongue-wink services__icon"></i></i>
-						<h2 class="item__title">portre</h2>
-						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
-					</div>
-					<div class="services__item">
-						<i class="fas fa-shopping-bag services__icon"></i>
-						<h2 class="item__title">ürün</h2>
-						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
-					</div>
-					<div class="services__item">
-						<i class="fas fa-meteor services__icon"></i>
-						<h2 class="item__title">sorununuz</h2>
-						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
-					</div>
+				<div class="services__item">
+					<i class="far fa-heart services__icon"></i>
+					<h2 class="item__title">düğün</h2>
+					<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+				</div>
+				<div class="services__item">
+					<i class="far fa-grin-tongue-wink services__icon"></i></i>
+					<h2 class="item__title">portre</h2>
+					<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+				</div>
+				<div class="services__item">
+					<i class="fas fa-shopping-bag services__icon"></i>
+					<h2 class="item__title">ürün</h2>
+					<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+				</div>
+				<div class="services__item">
+					<i class="fas fa-meteor services__icon"></i>
+					<h2 class="item__title">sorununuz</h2>
+					<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -166,6 +213,31 @@
 
 	<div class="plans">
 		<div class="container">
+				<!-- MOBILE PLANS START-->
+				<h3 class="services__title">fiyatlar</h3>
+				<div class="services__content flex mobile__plans">
+					<div class="services__item">
+						<h2 class="item__title">düğün</h2>
+						<p class="plans__item_subtitle"><sup>TL</sup>290 <sub>____45dk</sub></p>
+						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+					</div>
+					<div class="services__item">
+						<h2 class="item__title">portre</h2>
+						<p class="plans__item_subtitle"><sup>TL</sup>290 <sub>____45dk</sub></p>
+						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+					</div>
+					<div class="services__item">
+						<h2 class="item__title">ürün</h2>
+						<p class="plans__item_subtitle"><sup>TL</sup>290 <sub>____45dk</sub></p>
+						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+					</div>
+					<div class="services__item">
+						<h2 class="item__title">sorununuz</h2>
+						<p class="plans__item_subtitle"><sup>TL</sup>290 <sub>____45dk</sub></p>
+						<p class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quibusdam ea numquam voluptates.</p>
+					</div>
+			</div>
+					<!-- MOBILE PLANS END-->
 			<div class="plans__content flex">
 				<div class="plans__item">
 					<h4 class="plans__item_title">düğün</h4>
@@ -219,13 +291,13 @@
 		<div class="container">
 			<div class="owner__content">
 				<h3 class="owner__title"> <span>mery</span>em özkaya kim?</h3>
-				<div class="owner__info flex">
+				<div class="owner__info flex owner__info_mobile">
 					<p class="owner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, voluptatem totam perspiciatis eveniet ducimus fugit vel rerum nemo voluptatum perferendis. Reprehenderit adipisci suscipit recusandae quas expedita fugit porro necessitatibus unde.</p>
 					<p class="owner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, voluptatem totam perspiciatis eveniet ducimus fugit vel rerum nemo voluptatum perferendis. Reprehenderit adipisci suscipit recusandae quas expedita fugit porro necessitatibus unde.</p>
 				</div>
 				<div class="owner__info flex">
 					<p class="owner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, voluptatem totam perspiciatis eveniet ducimus fugit vel rerum nemo voluptatum perferendis. Reprehenderit adipisci suscipit recusandae quas expedita fugit porro necessitatibus unde.</p>
-					<div class="owner__contact flex">
+					<div class="owner__contact">
 						<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
 						<a target="_blank" href="https://www.instagram.com/?hl=sr"><i class="fab fa-instagram"></i></a>
 						<a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
@@ -255,10 +327,10 @@
 					<div class="contact__info_data">
 						<address>
 							<p class="info__title">information</p>
-							<p><i class="fas fa-map-marker-alt"></i>Meryem Özkaya <br> 54 Hasanpaşa Street, Bursa</p>
-							<p><i class="fas fa-phone-square-alt"></i>+905568594 (Phone) 12345dk6</p>
-							<p><i class="fas fa-fax"></i>+123 (FAX) 0011223</p>
-							<p><i class="far fa-envelope"></i>info@bak-onecompany.com</p>
+							<p><i class="fas fa-map-marker-alt"></i>  münevver musa <br> 54 Hasanpaşa Street, Bursa</p>
+							<p><i class="fas fa-phone-square-alt"></i>  +905568594 (Phone) 12345dk6</p>
+							<p><i class="fas fa-fax"></i>  +123 (FAX) 0011223</p>
+							<p><i class="far fa-envelope"></i>  info@bak-onecompany.com</p>
 						</address>
 					</div>
 				</div>
@@ -270,7 +342,7 @@
 
 <!-- FOOTER START -->
 
-	<footer>
+	<footer class="footer">
 		<div class="container">
 			<div class="footer__content flex">
 				<div class="footer__nav">
@@ -281,7 +353,7 @@
 						<li><a href="#">yukarı</a></li>
 					</ul>
 				</div>
-				<h3 class="footer__title"> &copy; MERYEM ÖZKAYA 2020 </h3>
+				<h3 class="footer__title"> &copy; münevver musa 2020 </h3>
 			</div>
 		</div>
 	</footer>
@@ -303,6 +375,16 @@ window.location.hash = hash;
 });
 });
 });
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>
 </body>
 </html>
