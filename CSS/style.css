@@ -27,7 +27,7 @@ a{
 /* HEADER START */
 
 .header{
-	background: url(../IMG/header.png) 0 100%/cover fixed;
+	background: url(../IMG/header.png) 50% 10%/ cover fixed;
 	padding: 6em 0 2em 0;
 }
 
